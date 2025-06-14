@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="order.css">
+    <style>
+        .order-list {
+            margin-top: 20px;
+        }
+
+        .order-item {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .order-item h4 {
+            margin-bottom: 5px;
+        }
+
+        .order-item p {
+            margin-bottom: 5px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="header">
+        <div class="w">
+            <!-- logo部分 -->
+            <div class="logo"><img src="img/logo2.png"></div>
+
+            <!-- 导航栏部分 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="order.html">首页</a></li>
+                    <li><a href="#">菜单</a></li>
+                    <li><a href="#" class="active">我的订单</a></li>
+                </ul>
+            </div>
+            <!-- 搜索模块 -->
+            <div class="search">
+                <input type="text" placeholder="输入菜品名称">
+                <button></button>
+            </div>
+            <!-- 用户模块 -->
+            <div class="user">
+                <!-- 用网络占位图替代用户头像 -->
+                <img src="img/user.png" alt="用户头像">
+                <span>用户名</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 我的订单内容区域 -->
+    <div class="w">
+        <h2 style="margin-top: 80px;">我的订单</h2>
+        <div class="order-list">
+            <!-- 订单示例 -->
+            <div class="order-item">
+                <h4>订单编号：20240101001</h4>
+                <p>下单时间：2024-01-01 12:00</p>
+                <p>菜品：老坛酸菜鱼饭 x 1，黑椒牛柳意面 x 1</p>
+                <p>总价：154 元</p>
+                <p>订单状态：已完成</p>
+            </div>
+            <div class="order-item">
+                <h4>订单编号：20240102002</h4>
+                <p>下单时间：2024-01-02 18:30</p>
+                <p>菜品：泰式冬阴功汤 x 1，天妇罗盖饭 x 1</p>
+                <p>总价：45 元</p>
+                <p>订单状态：配送中</p>
+            </div>
+        </div>
+    </div>
